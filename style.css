@@ -34,7 +34,7 @@ button:hover, .a-mail {
 
 a{
   text-decoration: none;
-  color: wheat;
+  color: white;
 }
 
 /* First page */
@@ -54,7 +54,7 @@ a{
 #second,
 #third,
 #forth,
-#six {
+#six, #seven {
   display: none;
 }
 
@@ -87,6 +87,15 @@ h4 {
 #second h4,
 #third h4 {
   color: #e90000;
+}
+
+.cradit{
+  font-size: 0.9rem;
+  margin: 1rem;
+}
+.cradit a{
+  color: #e90000;
+  cursor: pointer;
 }
 
 /* Photo rotate */
