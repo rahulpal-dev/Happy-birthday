@@ -1,4 +1,4 @@
-// heart effect
+// Heart Effect
 window.addEventListener("load", function () {
   setInterval(createHeart, 500);
 });
@@ -24,7 +24,7 @@ function createHeart() {
   }, duration * 1000);
 }
 
-// selectors 
+// Selectors
 const yesBtn1 = document.getElementById("yesButton1");
 const yesBtn2 = document.getElementById("yesButton2");
 const yesBtn3 = document.getElementById("yesButton3");
@@ -46,8 +46,7 @@ const fifthContainer = document.getElementById("fifth");
 const sixContainer = document.getElementById("six");
 const sevenContainer = document.getElementById("seven");
 
-
-// yes button event
+// Yes Button Events
 yesBtn1.addEventListener("click", () => {
   firstContainer.style.display = "none";
   secondContainer.style.display = "block";
@@ -63,7 +62,7 @@ yesBtn3.addEventListener("click", () => {
 yesBtn4.addEventListener("click", () => {
   forthContainer.style.display = "none";
   fifthContainer.style.display = "block";
-  alert("You the queen of my dream!");
+  alert("You are the queen of my dreams!");
 });
 nextBtn.addEventListener("click", () => {
   fifthContainer.style.display = "none";
@@ -72,10 +71,10 @@ nextBtn.addEventListener("click", () => {
 yesBtn6.addEventListener("click", () => {
   sixContainer.style.display = "none";
   sevenContainer.style.display = "block";
-  alert("You the queen of my dream!");
+  alert("You are the queen of my dreams!");
 });
 
-// no button event
+// No Button Events
 noBtn1.addEventListener("mouseover", () => {
   moveButton(noBtn1, firstContainer);
 });
@@ -92,6 +91,7 @@ noBtn6.addEventListener("mouseover", () => {
   moveButton(noBtn6, sixContainer);
 });
 
+// Move Button Logic
 function moveButton(button, container) {
   const containerRect = container.getBoundingClientRect();
   const btnRect = button.getBoundingClientRect();
@@ -106,3 +106,11 @@ function moveButton(button, container) {
   button.style.left = `${randomX}px`;
   button.style.top = `${randomY}px`;
 }
+
+// Responsive Adjustment on Resize
+window.addEventListener("resize", () => {
+  document.querySelectorAll("button").forEach((btn) => {
+    btn.style.left = "auto";
+    btn.style.top = "auto";
+  });
+});
