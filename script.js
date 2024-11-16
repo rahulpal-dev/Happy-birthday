@@ -70,7 +70,7 @@ nextBtn.addEventListener("click", () => {
 });
 yesBtn6.addEventListener("click", () => {
   sixContainer.style.display = "none";
-  sevenContainer.style.display = "none";
+  sevenContainer.style.display = "block";
   alert("You the queen of my dream!");
 });
 
