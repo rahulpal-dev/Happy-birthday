@@ -44,6 +44,7 @@ const thirdContainer = document.getElementById("third");
 const forthContainer = document.getElementById("forth");
 const fifthContainer = document.getElementById("fifth");
 const sixContainer = document.getElementById("six");
+const sevenContainer = document.getElementById("seven");
 
 
 // yes button event
